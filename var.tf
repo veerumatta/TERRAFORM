@@ -6,7 +6,7 @@ variable "key_name" {
 
 # Database password for RDS
 variable "password" {
-  default="Charan54321"
+  default="veera54321"
   type        = string
   sensitive   = true
 }
