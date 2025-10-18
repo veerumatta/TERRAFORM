@@ -11,7 +11,7 @@ resource "aws_vpc" "ch-vpc" {
 resource "aws_subnet" "public-1" {
   vpc_id            = aws_vpc.ch-vpc.id
   cidr_block        = "13.0.1.0/24"
-  availability_zone = "us-east-1a"
+  availability_zone = "ap-south-1c"
 
   tags = {
     Name = "public-1"
@@ -21,7 +21,7 @@ resource "aws_subnet" "public-1" {
 resource "aws_subnet" "public-2" {
   vpc_id            = aws_vpc.ch-vpc.id
   cidr_block        = "13.0.2.0/24"
-  availability_zone = "us-east-1b"
+  availability_zone = "ap-south-1b"
 
   tags = {
     Name = "public-2"
@@ -31,7 +31,7 @@ resource "aws_subnet" "public-2" {
 resource "aws_subnet" "private-1" {
   vpc_id            = aws_vpc.ch-vpc.id
   cidr_block        = "13.0.3.0/24"
-  availability_zone = "us-east-1a"
+  availability_zone = "ap-south-1c"
 
   tags = {
     Name = "private-1"
@@ -41,7 +41,7 @@ resource "aws_subnet" "private-1" {
 resource "aws_subnet" "private-2" {
   vpc_id            = aws_vpc.ch-vpc.id
   cidr_block        = "13.0.4.0/24"
-  availability_zone = "us-east-1b"
+  availability_zone = "ap-south-1b"
 
   tags = {
     Name = "private-2"
@@ -51,7 +51,7 @@ resource "aws_subnet" "private-2" {
 resource "aws_subnet" "private-3" {
   vpc_id            = aws_vpc.ch-vpc.id
   cidr_block        = "13.0.5.0/24"
-  availability_zone = "us-east-1a"
+  availability_zone = "ap-south-1c"
 
   tags = {
     Name = "private-3"
@@ -61,7 +61,7 @@ resource "aws_subnet" "private-3" {
 resource "aws_subnet" "private-4" {
   vpc_id            = aws_vpc.ch-vpc.id
   cidr_block        = "13.0.6.0/24"
-  availability_zone = "us-east-1b"
+  availability_zone = "ap-south-1b"
 
   tags = {
     Name = "private-4"
