@@ -1,6 +1,6 @@
 # Web tier EC2 Instances
 resource "aws_instance" "webtier-1" {
-  ami                         = "ami-08982f1c5bf93d976"
+  ami                         = "ami-06fa3f12191aa3337"
   instance_type               = "t3.micro"
   key_name                    = var.key_name
   subnet_id                   = aws_subnet.public-1.id
@@ -14,7 +14,7 @@ resource "aws_instance" "webtier-1" {
 }
 
 resource "aws_instance" "webtier-2" {
-  ami                         = "ami-08982f1c5bf93d976"
+  ami                         = "ami-06fa3f12191aa3337"
   instance_type               = "t3.micro"
   key_name                    = var.key_name
   subnet_id                   = aws_subnet.public-2.id
